@@ -32,7 +32,7 @@ TICKETSWAP_URL = (
     "bicep-live-london-royal-albert-hall-2026-11-26-CasTWgohXUKoVNxiRvHLb/"
     "seats-tickets/6161819"
 )
-POLL_SECONDS = int(os.environ.get("TICKET_WATCH_INTERVAL", "30"))
+POLL_SECONDS = int(os.environ.get("TICKET_WATCH_INTERVAL", "15"))
 STATE_FILE = Path(os.environ.get("TICKET_WATCH_STATE", ".ticket-watch-state.json"))
 
 

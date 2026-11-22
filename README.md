@@ -16,7 +16,7 @@ playwright install chromium
 python watcher.py
 ```
 
-Keep the process running to receive notifications. Press `Ctrl+C` to stop it. The default polling interval is 30 seconds. To change it, set `TICKET_WATCH_INTERVAL` to a number of seconds before starting. The watcher stores already-notified listing IDs in `.ticket-watch-state.json`; remove that file if you want to receive alerts for currently listed matches again.
+Keep the process running to receive notifications. Press `Ctrl+C` to stop it. The default polling interval is 15 seconds. To change it, set `TICKET_WATCH_INTERVAL` to a number of seconds before starting. The watcher stores already-notified listing IDs in `.ticket-watch-state.json`; remove that file if you want to receive alerts for currently listed matches again.
 
 On non-macOS systems, matches are printed to the terminal instead of using desktop notifications.
 
