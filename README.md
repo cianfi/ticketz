@@ -1,6 +1,6 @@
 # Bicep ticket watcher
 
-Watches the Twickets and TicketSwap event pages for **two tickets with explicit evidence that the seats are together** for Bicep Live at the Royal Albert Hall on Thursday 26 November 2026. It sends a macOS notification with a link so you can review and decide what to do. It never signs in, reserves, or buys tickets.
+Watches the Twickets and TicketSwap event pages for **two tickets with explicit evidence that the seats are together** for Bicep Live at the Royal Albert Hall on Thursday 26 November 2026. When a new match appears, it sends a macOS notification and opens the listing in your default browser for you to review. It never signs in, reserves, or buys tickets.
 
 The checker is deliberately strict: it only alerts when one listing states a pair and gives consecutive seat numbers in the same row, or explicitly says the two seats are together/adjacent. It does not treat standing tickets or two separate listings as a seated pair.
 

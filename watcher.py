@@ -144,6 +144,8 @@ def _notify(title: str, message: str, url: str) -> None:
     if sys.platform == "darwin":
         script = "display notification " + json.dumps(body) + " with title " + json.dumps(title)
         subprocess.run(["osascript", "-e", script], check=False)
+        # Bring the matching listing to the foreground for quick manual review.
+        subprocess.run(["open", url], check=False)
     else:
         print(f"\n{title}\n{body}", flush=True)
 
